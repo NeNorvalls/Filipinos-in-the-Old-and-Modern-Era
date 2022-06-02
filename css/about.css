@@ -1,0 +1,53 @@
+#author-img {
+  height: 100%;
+  width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.about-row {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.column {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  margin-top: 3em;
+}
+
+/* ################### TEXT #################### */
+h1,
+h2,
+p {
+  text-align: left;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.about-text {
+  font-size: 18px;
+  margin-top: 3rem;
+  font-family: "PT Sans", sans-serif;
+  text-align: left;
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
+  }
+  .intro h1,
+  #about-h2 {
+    text-align: center;
+  }
+}

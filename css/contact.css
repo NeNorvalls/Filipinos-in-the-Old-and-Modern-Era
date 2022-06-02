@@ -1,0 +1,113 @@
+/* ################### CONTACT #################### */
+
+input {
+  display: inline-block;
+  border-radius: 3px;
+  transition: 0.15s;
+  padding: 8px;
+}
+
+input:focus {
+  width: 200px;
+  background-color: #ffe1e0;
+}
+
+.input-label {
+  display: block;
+}
+
+.input-label span {
+  z-index: 1;
+  cursor: text;
+  pointer-events: none;
+  color: #fff;
+  line-height: 17px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 40px;
+  max-height: 300px;
+  border-radius: 3px;
+}
+
+.form-error {
+  display: none;
+  color: #ee0000;
+  font-size: 1rem;
+}
+
+.contact-section {
+  margin: 15px 30px 15px 30px;
+}
+
+.success {
+  color: #2eeb93;
+  padding: 10px;
+  background-color: #034426;
+  border: 0.3px solid #2eeb93;
+}
+
+.contact-h2 {
+  font-family: "Noto", serif;
+  color: #1e005c;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+#contactForm {
+  color: #fff;
+  background-color: #1e005c;
+  padding-top: 2rem;
+  max-width: 550px;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 8vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+#contactForm input {
+  color: #1e005c;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.submit-btn {
+  padding: 8px 28px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  max-width: 200px;
+  background: #fff;
+  color: #1e005c;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 2px solid #1e005c;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn:hover {
+  background-color: #1e005c;
+  color: #fff;
+  border: 2px solid white;
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 768px) {
+  .contact-h2 {
+    margin-top: 6.2rem;
+  }
+}

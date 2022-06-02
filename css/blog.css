@@ -1,0 +1,191 @@
+/* ################### LAYOUT #################### */
+.blog-content-container {
+  min-height: 80vh;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+.column {
+  width: 50%;
+  float: left;
+}
+
+/* ################### IMAGES #################### */
+.bg-img {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.details-link {
+  cursor: pointer;
+}
+
+/* ################### TITLE #################### */
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  margin: 10px auto;
+  /* max-width: 80%; */
+}
+.blog-title {
+  font-family: "Noto Serif", serif;
+  color: #1e005c;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 432px;
+  margin: 0 auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.blog-category {
+  color: rgb(142, 24, 0);
+  font-weight: bold;
+}
+
+/* ################### BUTTONS #################### */
+/* #fefe00 #290a5c*/
+/* buttons */
+#view-btn,
+#view-btn-2 {
+  background: #1e005c;
+  border-radius: 999px;
+  border: 2px solid #1e005c;
+  box-shadow: #1e005c 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffe1e0;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#view-btn:hover,
+#view-btn-2:hover {
+  color: #1e005c;
+  background-color: #ffe1e0;
+  border: 2px solid #1e005c;
+  transition: all 0.2s ease-in;
+}
+
+.view-btn-container {
+  text-align: center;
+  margin-bottom: -55rem;
+}
+
+#view-btn-2-container {
+  text-align: center;
+  bottom: 4rem;
+  margin-top: 60rem;
+}
+
+#view-btn-2 {
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.blog-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#readmore-btn {
+  margin-top: 10px;
+  border: 3px solid #1e005c;
+  padding: 8px 8px;
+  font-weight: bold;
+  color: #1e005c;
+}
+#readmore-btn:hover {
+  transition: all 0.1s ease-in;
+  color: rgb(142, 24, 0);
+  border-color: rgb(142, 24, 0);
+}
+
+/* RESPONSIVENESS */
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 1200px #################### */
+@media screen and (max-width: 1200px) {
+  .blog-title {
+    max-width: 300px;
+  }
+  /* lessen the margin on the main content */
+  main {
+    width: 100% !important;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 768px) {
+  /* one column layout */
+  .column {
+    width: 95%;
+    float: none;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .blog-title {
+    font-size: 20px;
+    max-width: 400px;
+  }
+  .bg-img {
+    width: 100%;
+  }
+  .dd-button {
+    margin-left: -10px;
+  }
+  #view-btn,
+  #view-btn-2 {
+    margin-top: 30px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 460px #################### */
+@media screen and (max-width: 460px) {
+  /* make the blog title responsive */
+  .blog-title {
+    max-width: 250px;
+    font-size: 18px;
+  }
+  /* make the blog bg img responsive */
+  .bg-img {
+    min-height: 200px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 279px #################### */
+@media screen and (max-width: 279px) {
+  .blog-title {
+    max-width: 200px;
+  }
+}
+

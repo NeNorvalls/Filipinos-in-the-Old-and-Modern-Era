@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a blog site for those who are interested to know about Filipino ways  and traditions, type of food we like and the effects of modernization" />
+    <meta name="keyword" content="blogsite for filipinos, contact form for messaginfg the author directly" />
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+    <!-- ################### HOTJAR #################### -->
+   <script>
+      (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2859085,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+
+    <title>Contact | Blog</title>
+</head>
+<body>
+
+  <!-- ################### HEADER #################### -->
+  <header>
+
+    <!-- ################### HAMBURGER NENU #################### -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Filipinos in the Old and Modern Era</a>
+      <!-- display only on small screens -->
+      <a href="index.html" id="mq-logo">Modern Filipinos</a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="About.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="active nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- ################### MAIN #################### -->
+  <main>
+    <div class="contact-heading">
+      <h2 class="contact-h2">Get in Touch</h2>
+    </div>
+    <form id="contactForm">
+      <div class="contact-section" id="successContainer">
+        
+      </div>
+      <div class="contact-section">
+        <div class="form-error" id="fullNameError">
+          Please enter your full name
+        </div>
+        <label class="input-label">
+          <span>Full name</span>
+        </label>
+          <input class="input" name="fullName" id="fullName" placeholder="Full name">
+      </div>
+
+      <div class="contact-section">
+        <div class="form-error" id="emailError">
+          Please enter a valid email address
+        </div>
+        <label class="input-label">
+          <span>Email address</span>
+        </label>
+          <input class="input" name="email" id="email" placeholder="Email address">
+      </div>
+
+      <div class="contact-section">
+        <div class="form-error" id="subjectError">
+          Your subject must be at least 10 characters
+        </div>
+        <label class="input-label">
+          <span>Subject</span>
+        </label>
+          <input class="input" name="subject" id="subject" placeholder="Subject">
+      </div>
+
+      <div class="contact-section">
+        <div class="form-error" id="messageError">
+          Your message have to be more than 25 characters
+        </div>
+        <label class="input-label">
+          <span>Message</span>
+        </label>
+          <textarea class="input" id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+          
+      </div>
+      <div class="submit-container">
+        <button class="submit-btn contact-section" id="submitBtn" type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <button class="arrow-up">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <!-- ################### FOOTER #################### -->
+  <footer>
+    <div class="footer_container">
+      <div class="social-media">
+        <span><a href="http://facebook.com"><i class="fab fa-facebook"></i></a> <a href="http://instagram.com"><i class="fab fa-instagram"></i></a> <a href="http://youtube.com"><i class="fab fa-youtube"></i></a> <a href="http://pinterest.com"><i class="fab fa-pinterest"></i></a> <a href="http://twitter.com/"><i class="fab fa-twitter"></i></a> <a href="http://discord.com"><i class="fab fa-github"></i></a></span>
+      </div>
+      <div class="copy-container">
+        <span class="copy">Copyright &copy; Nenorvalls.no 2022</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/components.js/hamburger.js"></script>
+  <script src="/js/contact.js"></script>
+  <script src="js/components.js/arrow-up.js"></script>
+
+</body>
+</html>

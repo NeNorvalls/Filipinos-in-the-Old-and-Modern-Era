@@ -1,0 +1,98 @@
+/* ################### DROP-DOWN LIST CATEGORY #################### */
+.category-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.category-title {
+  margin-top: 15px;
+  letter-spacing: 1px;
+  font-family: "Noto Serif", serif;
+  color: #1e005c;
+}
+
+.dd-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #1e005c;
+  color: #e6fd14;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+.dd-button:hover {
+  background-color: transparent;
+  border: 2px solid #1e005c;
+  color: #000;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  margin: 2px 0 0 0;
+  padding: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.966);
+  background-color: #ffe1e0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.dd-menu a {
+  color: #000;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+}
+
+.dd-menu li {
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #fff;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #fff;
+}

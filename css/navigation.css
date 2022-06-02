@@ -1,0 +1,203 @@
+.logo {
+  font-family: "Fredericka the Great", cursive;
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  letter-spacing: 1.3px;
+}
+#mq-logo {
+  display: none;
+  font-family: "Fredericka the Great", cursive;
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: capitalize;
+}
+
+.header-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 800px;
+  background: url("/images/Philippines1.jpeg");
+  background-size: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #1e005c;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.active,
+.nav-link:hover {
+  color: #e6fd14;
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 1200px #################### */
+@media screen and (max-width: 1200px) {
+  /* LOGO RESPONSIVENESS */
+  .logo {
+    font-size: 1.8em;
+  }
+  /* HEADER BACKGROUND IMAGE RESPONSIVENESS */
+  .header-bg {
+    height: 600px;
+  }
+  p.bg-text {
+    margin-top: -7em;
+    font-size: 26px;
+  }
+  /* LATEST POST HEADING */
+  h1.latest-heading {
+    font-size: 1.4rem;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 960px #################### */
+@media screen and (max-width: 960px) {
+  /* LOGO RESPONSIVENESS */
+  #mq-logo {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  /* HEADER BACKGROUND IMAGE RESPONSIVENESS */
+  .header-bg {
+    height: 430px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 768px) {
+  /* HAMBURGER RESPONSIVENESS */
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1e005c;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  /* make the navbar fixed as an alternative to the top-btn */
+  .navbar {
+    width: 100%;
+    background: #1e005c;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+  #top-btn {
+    display: none;
+  }
+
+  /* HEADER BACKGROUND TEXT RESPONSIVENESS */
+  p.bg-text {
+    font-size: 1rem;
+    margin-top: -8rem;
+  }
+  p.bg-text span {
+    display: none;
+  }
+  /* FOOTER CONTENT */
+  span a i {
+    font-size: 18px;
+  }
+  span.copy {
+    font-size: 14px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 460px #################### */
+@media screen and (max-width: 460px) {
+  /* LOGO RESPONSIVENESS */
+  #mq-logo {
+    font-size: 1.4em;
+  }
+  /* HEADER BACKGROUND IMAGE RESPONSIVENESS */
+  .header-bg {
+    height: 300px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 279px #################### */
+@media screen and (max-width: 279px) {
+  p.bg-text {
+    display: none;
+  }
+}

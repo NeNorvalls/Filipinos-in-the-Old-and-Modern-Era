@@ -1,0 +1,134 @@
+.blog-content-container {
+  max-width: 1200px;
+}
+
+.blog-content-container h1 {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 1px;
+  color: #1e005c;
+  font-size: 2.5em;
+}
+
+.back-btn-container {
+  display: flex;
+  max-width: 800px;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+
+a.back-to-btn {
+  color: rgb(142, 24, 0);
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+a.back-to-btn:hover {
+  color: #1e005c;
+}
+
+.content-info-container {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.content-text-container p {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.category-info {
+  margin-top: 15px;
+  color: rgb(142, 24, 0);
+}
+
+.details-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  cursor: pointer;
+}
+
+.details-img:hover {
+  opacity: 0.9;
+}
+
+.details-img,
+.content-info-container,
+.content-text-container,
+.info-below {
+  max-width: 800px;
+}
+
+.content-text-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info-below {
+  font-size: 14px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+span#author {
+  font-style: italic;
+  font-family: "PT Sans", sans-serif;
+  opacity: 70%;
+  margin-right: 2.5px;
+}
+span#author-name {
+  font-weight: bold;
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 960px #################### */
+@media screen and (max-width: 960px) {
+  .details-img,
+  .content-info-container,
+  .content-text-container,
+  .info-below {
+    display: flex;
+  }
+  .content-img-container,
+  .content-info-container,
+  .content-text-container,
+  .info-below {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .blog-content-container h1 {
+    margin: 30px 0 30px 0 auto;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 830px) {
+  .back-btn-container {
+    margin-left: 15px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 768px) {
+  .blog-content-container h1 {
+    margin-top: 6.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 2rem;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 460px #################### */
+@media screen and (max-width: 460px) {
+  .blog-content-container h1 {
+    font-size: 1.4rem;
+  }
+  .info-below {
+    font-size: 12px;
+  }
+}

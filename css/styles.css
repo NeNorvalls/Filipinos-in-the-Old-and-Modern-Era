@@ -1,0 +1,203 @@
+/* ################### IMPORT STYLE ####################  */
+@import url(/css/about.css);
+@import url(/css/navigation.css);
+@import url(/css/blog.css);
+@import url(/css/category.css);
+@import url(/css/modal.css);
+@import url(/css/details.css);
+@import url(/css/contact.css);
+
+/* ################### IMPORT FONTS ####################  */
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+/* ################### UNIVERSAL STYLE ####################  */
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe1e0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* ################### LOADER #################### */
+.loader-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*loading*/
+.loader {
+  margin-bottom: 100vh;
+  border: 14px solid rgb(240, 240, 240);
+  border-radius: 50%;
+  border-top: 14px solid #1e005c;
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+/* ################### GENERAL LAYOUT STYLE #################### */
+main {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 80%;
+}
+
+.latest-heading {
+  letter-spacing: 1px;
+  color: #1e005c;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* ################### HERO HOMEPAGE #################### */
+p.bg-text,
+.bg-text span {
+  text-shadow: 1px 1px 1px white;
+  font-family: "Noto Serif", serif;
+  color: #1e005c;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: -9em;
+}
+
+.arrow-up {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 15px;
+  position: fixed;
+  z-index: 9990;
+  right: 25px;
+  bottom: 20px;
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  padding: 10px 13px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  text-align: center;
+  opacity: 0;
+  color: #ffe1e0;
+  border: 2.5px solid #ffe1e0;
+  border-radius: 2px;
+  background-color: #1e005c;
+}
+.arrow-up:hover {
+  background-color: rgb(142, 24, 0);
+  color: white;
+  transition: all 0.15s ease-in-out;
+}
+.arrow-up.is-block {
+  display: block;
+}
+.arrow-up.is-opacity {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ################### FOOTER #################### */
+footer {
+  margin-top: auto;
+}
+.footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+  background-color: #1e005c;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+span a {
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+}
+
+span a:hover {
+  color: #e6fd14;
+}
+
+.copy {
+  color: #fff;
+}
+
+.social-media i {
+  margin-bottom: 20px;
+}
+
+.social-media,
+.copy-container {
+  text-align: center;
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 1200px #################### */
+@media screen and (max-width: 1200px) {
+  p.bg-text,
+  .bg-text span {
+    font-size: 22px;
+  }
+}
+
+/* ################### RESPONSIVENESS FOR SCREENS SMALLER THAN 768px #################### */
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+  .arrow-up {
+    font-size: 12px;
+  right: 6px;
+  }
+}
